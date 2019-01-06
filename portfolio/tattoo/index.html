@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>AMZ TATTOO</title>
+  <meta name="description" content="">
+
+  <link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a class="logo__icon" href="/"><img src="img/icon/logo.png" alt="AMZ TATTOO"></a>
+          <div class="logo__title">amz tattoo</div>
+        </div>
+        
+        <nav class="nav">
+          <a class="nav__item" href="#feature" >О нас</a>
+          <a class="nav__item" href="#work" >Портфолио</a>
+          <a class="nav__item" href="#working" >Этапы работы</a>
+          <a class="nav__item" href="#team" >Команда</a>
+          <a class="nav__item" href="#" >Цены</a>
+        </nav>
+
+        <div class="feedback">
+          <a class="feedback__mail" href="#">Написать нам</a>
+          <a class="feedback__phone" href="tel:+7495223456">+7 (495) 223456</a>
+          <a class="feedback__btn" href="#lead">Записаться на сеанс</a>
+        </div>
+
+        <a href="#" class="menu__button"><span></span></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner-wrapper">
+    <div class="container">
+      <div class="banner">
+        <div class="banner-text">
+          <h1 class="banner-text__title">Лучшие в рейтинге цены и качества</h1>
+          <p class="banner-text__discription">От разработки эскиза к безупречной татуировке</p>
+          <p class="banner-text__price">при заказе от 4 999 &#8381;</p>
+        </div>
+
+        <div class="scroll"><a href="#feature" >← Крутите вниз</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature" id="feature">
+    <div class="container">
+      <h2 class="section-title">Почему выбирают нас</h2>
+      <p class="feature_description">Все услуги нашей студии оказываются профессионалами и с помощью современного оборудования</p>
+
+      <div class="card">
+        <div class="card__item card-one">
+          <div class="card__title">8920</div>
+          <div class="card__desc">татуировок сделали наши мастера</div>
+          <a class="card__btn" href="#">Подробнее</a>
+        </div>
+        
+        <div class="card__item card-two">
+          <div class="card__title">12</div>
+          <div class="card__desc">мастеров высочайшего уровня</div>
+          <a class="card__btn" href="#">Подробнее</a>
+        </div>
+        
+        <div class="card__item card-three">
+          <div class="card__title">100%</div>
+          <div class="card__desc">стерильность помещения и оборудования</div>
+          <a class="card__btn" href="#">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="container">
+      <h2 class="section-title">Наши работы</h2>
+      <p class="work__description">Главная цель мастера — передать не только картинку, но и задумку, особенности <br>и эмоции человека</p>
+
+      <div class="gallery">
+        <img class="img-responsive" src="img/work-1.png" alt="">
+        <img class="img-responsive" src="img/work-2.png" alt="">
+        <img class="img-responsive" src="img/work-3.png" alt="">
+        <img class="img-responsive" src="img/work-4.png" alt="">
+        <img class="img-responsive" src="img/work-5.png" alt="">
+        <img class="img-responsive" src="img/work-6.png" alt="">
+      </div>
+
+      <a class="work__btn" href="#">Открыть галерею</a>
+    </div>
+  </section>
+  
+  <section class="working" id="working">
+    <div class="container">
+      <h2 class="section-title">Как мы работаем</h2>
+
+      <div class="stages">
+        <div class="stages-item">
+          <div class="stages-item__number"><span>1</span></div>
+          <div class="stages-body">
+            <h3 class="stages-body__title">Заявка на сайте или по телефону</h3>
+            <p class="stages-body__desc">Мы воплотим любую вашу идею татуировки в жизнь. Оставьте заявку и мы перезвоним вам в течение 15 минут.</p>
+          </div>
+        </div>
+
+        <div class="stages-item">
+          <div class="stages-item__number"><span>2</span></div>
+          <div class="stages-body">
+            <h3 class="stages-body__title">Разработка уникального эскиза</h3>
+            <p class="stages-body__desc">Далее мастер приступает к созданию индивидуального эскиза татуировки по вашей задумке и утверждает его с вами.</p>
+          </div>
+        </div>
+
+        <div class="stages-item">
+          <div class="stages-item__number"><span>3</span></div>
+          <div class="stages-body">
+            <h3 class="stages-body__title">Сеанс татуировки и итоговая оплата</h3>
+            <p class="stages-body__desc">В стерильной студии и с использованием лучшего оборудования вы получаете качественную татуировку.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="lead" id="lead">
+    <div class="container">
+      <form class="lead-form" action="#" method="get">
+        <div class="lead-form__name">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name" placeholder="Имя">
+        </div>
+
+        <div class="lead-form__phone">
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" pattern="(\+?\d[- .]*){7,13}" placeholder="Телефон">
+        </div>
+
+        <button type="submit">Записаться</button>
+      </form>
+      
+      <p>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности.</p>
+    </div>
+  </div>
+
+  <section class="team" id="team">
+    <div class="container">
+      <h2 class="section-title">Наша команда</h2>
+      <p class="team__description">Искусство предполагает чувства за творчеством, а татуировка несет эти чувства через всю жизнь. Именно поэтому татуировку можно назвать искусством в его чистом виде.</p>
+
+      <div class="master">
+        <div class="master-item">
+          <img class="img-responsive" src="img/master-1.png" alt="Максим Хорламов">
+          <div class="master-item__name">Максим Хорламов</div>
+          <div class="master-item__bio">Макс специализируется на татуировках в стиле реализм, качественно и быстро исполняя масштабные работы.</div>
+        </div>
+
+        <div class="master-item">
+          <img class="img-responsive" src="img/master-2.png" alt="Петр Герасимов">
+          <div class="master-item__name">Петр Герасимов</div>
+          <div class="master-item__bio">Основная масса работ Петра — это татуировки в стиле black&gray, а также графика и кавер-ап в реализме.</div>
+        </div>
+
+        <div class="master-item">
+          <img class="img-responsive" src="img/master-3.png" alt="Анна Ильина">
+          <div class="master-item__name">Анна Ильина</div>
+          <div class="master-item__bio">Анна — специалист пирсинга и микродермала, имеющий медицинское образование и 3 года успешного опыта работы.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">amz tattoo</div>
+        <div class="footer-policy"><a href="#">Политика конфиденциальности</a></div>
+        <div class="footer-icons">
+          <a class="footer-icons__item footer-icons__item--twitter" href="https://twitter.com/#"></a>
+          <a class="footer-icons__item footer-icons__item--instagram" href="https://instagram.com/#"></a>
+          <a class="footer-icons__item footer-icons__item--vk" href="https://vk.com/#"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
