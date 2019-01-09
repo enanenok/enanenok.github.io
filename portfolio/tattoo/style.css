@@ -1088,7 +1088,7 @@ footer {
   .stages-item__number {
     margin: 0 auto;
     min-width: 90px;
-    width: auto;
+    width: 90px;
     height: 90px;
   }
 
