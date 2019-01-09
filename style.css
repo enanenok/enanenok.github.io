@@ -114,6 +114,9 @@ main {
 
 .portfolio-card {
   margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background-color: #38848c;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -121,6 +124,10 @@ main {
 
 .portfolio-card__info {
   margin: 20px 15px;
+}
+
+.card-item {
+  flex-grow: 1;
 }
 
 .card-item__title {
@@ -134,16 +141,16 @@ main {
   color: #fff;
 }
 
-.card-item__link {
+.portfolio-card__link {
   display: inline-block;
-  margin: 10px 0;
+  margin: 15px 15px;
   color: #fff;
   text-decoration: none;
   border-bottom: 1px rgba(255, 255, 255, 0.9) solid;
 }
 
-.card-item__link:hover {
-  opacity: .9;
+.portfolio-card__link:hover {
+  opacity: .8;
 }
 
 
