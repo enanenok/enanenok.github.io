@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["scripts.js"],"sourcesContent":["/* Third Party Libraries */\r\n\r\n/* Custom */\r\n\r\n$(\".menu-button\").click(function() {\r\n\r\n  $(this).toggleClass(\"on\");\r\n\r\n  $(\".menu-box\").slideToggle();\r\n\r\n  return false;\r\n\r\n});"],"file":"scripts.js"}
