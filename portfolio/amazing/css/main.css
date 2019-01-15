@@ -332,41 +332,35 @@ button {
           align-items: center;
 }
 
-.header-menu button {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  outline: none;
-}
-
 .menu-button {
   display: block;
   width: 28px;
-  height: 28px;
+  height: 22px;
+  cursor: pointer;
 }
 
-.menu-button span {
+.menu-button .icon {
   position: relative;
   display: block;
 }
 
-.menu-button span:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -9px;
-}
-
-.menu-button span:after {
+.menu-button .icon::before {
   content: "";
   position: absolute;
   left: 0;
   top: 9px;
 }
 
-.menu-button span, .menu-button span:after, .menu-button span:before {
+.menu-button .icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18px;
+}
+
+.menu-button .icon,
+.menu-button .icon::after,
+.menu-button .icon::before {
   width: 100%;
   height: 4px;
   background-color: #000;
@@ -379,20 +373,20 @@ button {
           border-radius: 6px;
 }
 
-.menu-button.on span {
+.menu-button.on .icon {
   background-color: transparent;
 }
 
-.menu-button.on span:before {
-  -webkit-transform: rotate(45deg) translate(6px, 6px);
-      -ms-transform: rotate(45deg) translate(6px, 6px);
-          transform: rotate(45deg) translate(6px, 6px);
+.menu-button.on .icon::before {
+  -webkit-transform: rotate(45deg) translate(-1px, 0px);
+      -ms-transform: rotate(45deg) translate(-1px, 0px);
+          transform: rotate(45deg) translate(-1px, 0px);
 }
 
-.menu-button.on span:after {
-  -webkit-transform: rotate(-45deg) translate(7px, -6px);
-      -ms-transform: rotate(-45deg) translate(7px, -6px);
-          transform: rotate(-45deg) translate(7px, -6px);
+.menu-button.on .icon::after {
+  -webkit-transform: rotate(-45deg) translate(6px, -7px);
+      -ms-transform: rotate(-45deg) translate(6px, -7px);
+          transform: rotate(-45deg) translate(6px, -7px);
 }
 
 .menu-title {
@@ -567,6 +561,10 @@ button {
           border-radius: 30px;
 }
 
+.instagram .button:hover {
+  opacity: .8;
+}
+
 .instagram-photo {
   background-image: url(../img/photo_3.jpg);
   -webkit-background-size: cover;
@@ -652,6 +650,10 @@ button {
           border-radius: 30px;
 }
 
+.play .button:hover {
+  opacity: .8;
+}
+
 .play .button span {
   display: inline-block;
   border-top: 7px solid transparent;
@@ -700,6 +702,10 @@ button {
           border-radius: 30px;
 }
 
+.spotify .button:hover {
+  opacity: .8;
+}
+
 .itunes {
   grid-column: span 2;
   padding-top: 126px;
@@ -739,6 +745,10 @@ button {
   border: 2px solid #f9f9f9;
   -webkit-border-radius: 30px;
           border-radius: 30px;
+}
+
+.itunes .button:hover {
+  opacity: .8;
 }
 
 .main-footer {
@@ -850,18 +860,19 @@ button {
   text-decoration: none;
 }
 
-.social-facebook::before,
-.social-twitter::before,
-.social-instagram::before,
-.social-spotify::before {
+.social:hover {
+  opacity: .8;
+}
+
+.social-facebook::before, .social-twitter::before, .social-instagram::before, .social-spotify::before {
   position: absolute;
   content: "";
   top: 3px;
   left: 0;
-  -webkit-background-size: cover;
-          background-size: cover;
   width: 14px;
   height: 14px;
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 
 .social-facebook::before {

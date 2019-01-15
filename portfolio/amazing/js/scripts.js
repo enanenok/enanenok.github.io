@@ -1,5 +1,3 @@
-/* Third Party Libraries */
-
 /* Custom */
 
 $(".menu-button").click(function() {
