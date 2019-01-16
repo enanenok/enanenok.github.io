@@ -1,4 +1,4 @@
-$(".menu__button").click(function() {
+$(".menu-button").click(function() {
   $(this).toggleClass("on");
   $(".nav").slideToggle();
   return false;

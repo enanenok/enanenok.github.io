@@ -127,6 +127,7 @@ header {
 .nav {
   position: relative;
   margin: 0 auto;
+  z-index: 1000;
 }
     .nav a:hover {
       color: #ff0000;
@@ -219,47 +220,53 @@ header {
       color: #ff0000;
     }
 
-.menu__button {
-  display: none;
-  width: 28px;
-  height: 28px;
+.menu-button {
+	display: none;
+	width: 28px;
+	height: 21px;
+  cursor: pointer;
 }
 
-.menu__button span:after, .menu__button span:before {
+.menu-button__icon {
+	position: relative;
+	display: block;
+}
+
+.menu-button__icon::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 9px;
+}
+
+.menu-button__icon::after {
   content: "";
-  position: absolute;
-  left: 0;
-  top: 9px;
+	position: absolute;
+	left: 0;
+	top: 18px;
 }
 
-.menu__button span:after {
-  top: 18px;
+.menu-button__icon,
+.menu-button__icon::before,
+.menu-button__icon::after {
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	transition: all 0.3s;
+	backface-visibility: hidden;
+	border-radius: 2px;
 }
 
-.menu__button span {
-  position: relative;
-  display: block;
+.menu-button.on .menu-button__icon {
+	background-color: transparent;
 }
 
-.menu__button span, .menu__button span:after, .menu__button span:before {
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  transition: all 0.3s;
-  backface-visibility: hidden;
-  border-radius: 2px;
+.menu-button.on .menu-button__icon::before {
+	transform: rotate(45deg) translate(-1px, 0px);
 }
 
-.menu__button.on span {
-  background-color: transparent;
-}
-
-.menu__button.on span:before {
-  transform: rotate(45deg) translate(-1px, 0px);
-}
-
-.menu__button.on span:after {
-  transform: rotate(-45deg) translate(6px, -7px);
+.menu-button.on .menu-button__icon::after {
+	transform: rotate(-45deg) translate(6px, -7px);
 }
 
 .banner-wrapper {
@@ -1013,8 +1020,8 @@ footer {
     z-index: 3;
   }
 
-  .menu__button {
-    display: inline-block;
+  .menu-button {
+    display: block;
   }
 
   .banner {
